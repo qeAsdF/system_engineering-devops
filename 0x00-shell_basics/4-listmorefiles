@@ -1,0 +1,10 @@
+#!/bin/bash
+ls -la 
+root@12996fe1f811:/system_engineering-devops/0x00-shell_basics# ls -la
+total 16
+drwxr-xr-x 2 root root  97 Jun 17 13:55 .
+drwxr-xr-x 4 root root  60 Jun 17 13:55 ..
+-rw-r--r-- 1 root root 129 Jun 17 13:55 0-currentworkingdirectory
+-rw-r--r-- 1 root root  93 Jun 17 13:55 1-listit
+-rw-r--r-- 1 root root 112 Jun 17 13:55 2-bring_me_home
+-rw-r--r-- 1 root root  18 Jun 17 13:55 3-listfiles

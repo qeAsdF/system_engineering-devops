@@ -1,1 +1,1 @@
-# system_engineering-devops
+the script writing task in learning GitHub

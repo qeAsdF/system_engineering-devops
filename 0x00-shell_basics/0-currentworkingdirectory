@@ -1,2 +1,4 @@
 #!/bin/bash
 pwd
+root@12996fe1f811:/system_engineering-devops/0x00-shell_basics# pwd
+/system_engineering-devops/0x00-shell_basics

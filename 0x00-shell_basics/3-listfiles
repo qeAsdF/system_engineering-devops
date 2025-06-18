@@ -1,8 +1,2 @@
 #!/bin/bash
-ls -l 
 root@12996fe1f811:/system_engineering-devops/0x00-shell_basics# ls -l
-total 16
--rw-r--r-- 1 root root 129 Jun 17 13:55 0-currentworkingdirectory
--rw-r--r-- 1 root root  93 Jun 17 13:55 1-listit
--rw-r--r-- 1 root root 112 Jun 17 13:55 2-bring_me_home
--rw-r--r-- 1 root root  18 Jun 17 13:55 3-listfiles

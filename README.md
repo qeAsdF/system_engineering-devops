@@ -1,1 +1,1 @@
-the script writing task in learning GitHub
+The script writing task in learning GitHub

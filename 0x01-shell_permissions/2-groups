@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Groups for user '$current_user':"
+echo "Groups for user '$user':"

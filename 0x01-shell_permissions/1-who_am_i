@@ -1,2 +1,2 @@
 #!/bin/bash
-os. geteuid
+echo "Effective username: $(id -un)"

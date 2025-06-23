@@ -1,1 +1,1 @@
-The script writing learning.
+The github script writing lessons.

@@ -1,1 +1,1 @@
-The script writting for shell redirecting commads.
+The script writting for shell commads.

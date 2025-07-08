@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 # Check that it is not a directory and contains a dash
 
-for file in *-*; do
+for file in *; do
   
-  if [ -f "$file" ]; then
-    echo "${file#*-}"
-
+  if [[ "$file" != .* ]]; then
+    
+    case "$file" in
+      *-*) echo "${file#*-}" ;;
+      *) echo "$file" ;;
+    esac
   fi
-
 done
+

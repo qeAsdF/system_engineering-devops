@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# ABash script that continuously displays the phrase “To infinity and beyond” indefinitely and pause for 2 sec after displaying.
+
+while true; do
+   echo "To infinity and beyond"
+   sleep 2
+done

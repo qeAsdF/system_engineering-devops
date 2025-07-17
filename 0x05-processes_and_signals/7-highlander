@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#A Bash script that should not terminate immediately upon receiving SIGTERM, but instead print "I am invincible!!!"  and continue its infinity_loop.
+
+trap "echo 'I am invincible!!!'" SIGTERM
+
+while true; do
+  echo "To infinity and beyond"  
+  sleep 2
+done

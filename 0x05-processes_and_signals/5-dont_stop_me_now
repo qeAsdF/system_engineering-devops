@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# A Bash script that stops the 4-to_infinity_and_beyond process.
+
+pgrep -f "infinity_loop.sh"
+PID=$"infinity_loop.sh"
+
+if [ -z "$PID" ]; then                                                                
+  
+  echo "Error: 'infinity_loop.sh' process not found or not running."
+  echo "Please ensure the script is running before attempting to stop it."
+else
+  
+  echo "Found 'infinity_loop.sh' with PID: $PID"
+  echo "Sending termination signal to PID $PID..."
+
+  kill "$PID"
+  
+  sleep 1
+  
+  if kill -0 "$PID" 2>/dev/null; then
+    echo "Process $PID is still running. It might be unresponsive or require a stronger signal."
+    echo "You might need to use 'kill -9 $PID' (force kill) if it persists, but use with caution."
+  else
+    echo "Successfully terminated 'infinity_loop.sh' (PID: $PID)."
+  fi
+fi

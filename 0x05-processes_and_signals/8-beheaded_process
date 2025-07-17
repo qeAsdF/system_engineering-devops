@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# A Bash script that kills the 7-highlander process using the SIGKILL signal.
+
+
+TARGET_SCRIPT="7-highlander"
+
+if pkill -9 -f "${TARGET_SCRIPT}"; then
+  exit 0
+else
+  echo "Error: '${TARGET_SCRIPT}' process not found or not running." >&2
+  exit 1 
+fi

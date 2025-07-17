@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # A Bash script that displays all running processes in a user-oriented format with hierarchy including processes without a TTY.
 
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+ps -eo user:10,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest \
+| awk 'NR==1 { $8="STATUS"; print; next } { print }'

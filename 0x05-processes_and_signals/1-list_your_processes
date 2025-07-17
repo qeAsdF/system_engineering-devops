@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 # A Bash script that displays all running processes in a user-oriented format with hierarchy including processes without a TTY.
 
-ps -eo user,lstart,cmd --no-headers | awk '{
+echo "USER STARTED CMD"
+
+ps -eo user,lstart,args --no-headers | awk '{
     user = $1;
-    started = $5;   # HH:MM:SS field from lstart
+    started = $5;   # Extract HH:MM:SS
     cmd = "";
     for (i = 6; i <= NF; i++) {
         cmd = cmd $i " ";
     }
-    gsub(/[ \t]+$/, "", cmd);  # Trim trailing space
+    gsub(/[ \t]+$/, "", cmd);  # Remove trailing space
     printf "%s %s %s\n", user, started, cmd;
 }'

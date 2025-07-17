@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# A Bash script that stops the 4-to_infinity_and_beyond process withou kill and killall commands.
+
+TARGET_SCRIPT="4-to_infinity_and_beyond"
+
+PID=$(pgrep -f "${TARGET_SCRIPT}")
+
+
+if [ -z "$PID" ]; then
+  echo "Error: '${TARGET_SCRIPT}' process not found or not running." >&2
+  exit 1
+else
+  echo "Found '${TARGET_SCRIPT}' with PID: $PID"
+  pkill -f ${TARGET_SCRIPT}'
+  exit 0 
+fi
+
